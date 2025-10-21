@@ -6,7 +6,7 @@ Your support goes directly toward upgrading my PC and developing more free scrip
 
 Thank you for your support! ❤️ https://ko-fi.com/riversafe33
 
-# ------------------------------------------------------------------- #
+# ---------------------------------------------------------------- #
 
 Complete Script to Use Peds In-Game
 
@@ -16,7 +16,7 @@ Complete Script to Use Peds In-Game
 
 The script is already preconfigured, but you can add more peds if you notice any missing in the config.lua.
 
-# ------------------------------------------------------------------- #
+# ---------------------------------------------------------------- #
 
 ![1](https://github.com/user-attachments/assets/b3d04819-e4ca-4786-8722-12642eeba047)
 
