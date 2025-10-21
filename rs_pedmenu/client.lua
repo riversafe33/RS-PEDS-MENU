@@ -78,7 +78,7 @@ RegisterNetEvent("rs_pedmenu:returnMyPeds")
 AddEventHandler("rs_pedmenu:returnMyPeds", function(peds)
     local elements = {}
     for _, ped in ipairs(peds) do
-        table.insert(elements, {label = ped, value = ped, desc = "Tu ped autorizado"})
+        table.insert(elements, {label = ped, value = ped, desc = Config.Text.Menu.YourPeds})
     end
 
     Menu.CloseAll()
