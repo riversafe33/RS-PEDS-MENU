@@ -36,6 +36,7 @@ Config.Text = {
         Grant = "Grant Ped",
         SelectPlayer = "Select a player",
         Delete = "Select ped to delete",
+        YourPeds = "Your authorized ped",
     },
     Notify = {
         SentAdmin = "Request sent to the admin.",
