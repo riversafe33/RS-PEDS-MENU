@@ -340,6 +340,7 @@ Config.PedList = {
     },
     ["ANIMAL PEDS"] = {
         "A_C_DogHusky_01",
+        "a_c_dogaustraliansheperd_01",
         "A_C_DogAmericanFoxhound_01",
         "A_C_DogBluetickCoonhound_01",
         "A_C_DogCatahoulaCur_01",
@@ -645,7 +646,7 @@ Config.AttackTypes  = {
     {
         models = {
             `A_C_DogAmericanFoxhound_01`,
-            `A_C_DogAustralianShepherd_01`,
+            `a_c_dogaustraliansheperd_01`,
             `A_C_DogBluetickCoonhound_01`,
             `A_C_DogCatahoulaCur_01`,
             `A_C_DogChesBayRetriever_01`,
