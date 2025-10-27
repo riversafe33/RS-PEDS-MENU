@@ -447,7 +447,7 @@ function ForceReload(ped)
                 TaskReloadWeapon(ped)
             end
 
-            Citizen.Wait(1000)
+            Citizen.Wait(0)
 
             RefillAmmoInCurrentPedWeapon(ped)
         end
