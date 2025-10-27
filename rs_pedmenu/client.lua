@@ -432,3 +432,38 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 	end
 end)
+
+function ForceReload(ped)
+    local hasWeapon, weaponHash = GetCurrentPedWeapon(ped, true)
+    if hasWeapon and weaponHash ~= GetHashKey("WEAPON_UNARMED") then
+        local ammoTotal = GetAmmoInPedWeapon(ped, weaponHash)
+
+        if ammoTotal > 0 and not IsPedReloading(ped) and not IsPedShooting(ped) then
+            SetPedAmmo(ped, weaponHash, 0)
+            Citizen.Wait(120)
+
+            if not IsPedUsingAnyScenario(ped) then
+                ClearPedSecondaryTask(ped)
+                TaskReloadWeapon(ped)
+            end
+
+            Citizen.Wait(1000)
+
+            RefillAmmoInCurrentPedWeapon(ped)
+        end
+    end
+end
+
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+
+        if IsControlJustPressed(0, 0xE30CD707) then
+            local ped = PlayerPedId()
+
+            if IsPedHuman(ped) and not IsPedInAnyVehicle(ped, false) and not IsPedOnMount(ped) then
+                ForceReload(ped)
+            end
+        end
+    end
+end)
